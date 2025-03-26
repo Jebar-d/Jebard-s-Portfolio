@@ -50,3 +50,19 @@ document.getElementById("contactForm").addEventListener("submit", async function
       form.style.display = "none"; 
     }, 500);
   });
+  
+async function loadHTML(file, containerId) {
+    try {
+        const response = await fetch(file);
+        if (!response.ok) throw new Error(`Error loading ${file}`);
+        const content = await response.text();
+        document.getElementById(containerId).innerHTML = content;
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+
+loadHTML('privacy.html', 'privacy-section');
+
+loadHTML('terms.html', 'terms-section');
