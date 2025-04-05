@@ -7,12 +7,14 @@ import '../styles/components/featured.css';
 import '../styles/components/work.css';
 import '../styles/components/contact.css';
 import '../styles/components/footer.css';
+import '../styles/components/mobile-nav.css';
 import '../styles/utils.css';
 
+import mobileNav from './utils/mobile-nav';
 import darkMode from './utils/dark-mode';
 
+mobileNav();
 darkMode();
-lazyLoading();
 
 document.getElementById("contactForm").addEventListener("submit", async function (event) {
     event.preventDefault(); 
@@ -21,7 +23,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
     const formData = new FormData(form);
   
     try {
-      const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+      const response = await fetch("https://formspree.io/f/xdkedbyj", {
         method: "POST",
         body: formData,
         headers: { "Accept": "application/json" },

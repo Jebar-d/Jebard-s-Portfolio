@@ -78,7 +78,6 @@ strong {
   color: var(--clr-indigo);
 }
 
-/* Scrollbar */
 body::-webkit-scrollbar {
   width: 8px;
 }

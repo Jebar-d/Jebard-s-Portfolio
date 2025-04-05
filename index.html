@@ -42,6 +42,42 @@
         </button>
     </nav>
    </header> 
+   <div class="mobile-nav">
+    <nav>
+      <ul class="mobile-nav__menu">
+        <li>
+          <a class="mobile-nav__link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#featured">Work</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#contact">Contact</a>
+        </li>
+        <li class="mobile-nav__link-line"></li>
+        <li>
+          <button
+            aria-label="theme-toggle btn"
+            id="theme-toggle"
+            class="mobile-nav__sun"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+              />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a class="mobile-nav__project btn" href="https://gebhard.projectsite.website/">Jebard</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
    <main>
    <section class = "hero conatainer">
     <img class="hero__img" src="hero.jpg" alt="Profile picture">
@@ -228,7 +264,7 @@
       <h3 class="work__project-title"></h3>
       <div class="work__img-wrapper work__image3">
         <img
-          src="./public/escape.jpg"
+          src="/escape.jpg"
           alt="Escape"
         />
       </div>
@@ -246,7 +282,7 @@
       <h3 class="work__project-title">Platform Pro</h3>
       <div class="work__img-wrapper work__image4">
         <img
-          src="./public/talks.jpg"
+          src="/talks.jpg"
           alt="IT Talks"
         />
       </div>
@@ -282,7 +318,7 @@
       <!-- Project 6 -->
       <h3 class="work__project-title">Fight Scene</h3>
       <video width="459" height="459" controls loop>
-        <source src="./public/animation.mp4" type="video/mp4">
+        <source src="/animation.mp4" type="video/mp4">
         <source src="movie.ogg" type="video/ogg">
       </video>
       <div class="work__project work__content6">
@@ -291,8 +327,8 @@
          This was a past project I created in grade 12th.
         </p>
         <p class="work__project-description2">
-         This was my first animation that I created and I was very proud of it.
-         The frames were clean, it was lacking colors, but it was still quite create.
+         This was my first animation that I created and I was very proud of it hehe.
+         The frames were clean, it was lacking colors, but it was still quite good if I should say so myself.
         </p>
       </div>
     </div>
@@ -305,7 +341,7 @@
         <input type="text" id="name" name="name" placeholder="Your Name" required>
         <input type="email" id="email" name="email" placeholder="Your Email" required>
         <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-        <a class="contact__btn btn" id="submitBtn">Send Message</a>
+        <a btn class="contact__btn btn" type="submit" id="submitBtn">Send Message</a>
       </form>
       <div id="formMessage" class="hidden">Your message has been sent successfully!</div>
     </section>
